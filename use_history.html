@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>履歴機能について - 辞書 - 小説誤字fix(js)</title>
+<meta name="viewport" content="width=device-width">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>小説誤字fix(js) - 用例</h1>
+[<a href="index.html">index</a>]<br>
+<div id="jstop"></div>
+<h2>履歴機能について</h2>
+<p>
+ページ下部に「履歴」機能がありますが、ローカルストレージとJavaScritにて動作しており、サーバー側には送信されません。<br>
+「クリア」ボタンを押すと一時的に削除されます。<br>
+「無効」ボタンを押すと、履歴を削除しそれ以降履歴が記録されなくなります。<br>
+「有効にする」ボタンを押すと、履歴機能が再開されます。<br>
+index.html および user_history.htmlなどの専用ページは記録対象から除外されています。<br>
+<br>
+→：<a href="https://developer.mozilla.org/ja/docs/Learn_web_development/Extensions/Client-side_APIs/Client-side_storage">mozilla MDN クライアント側ストレージ</a><br>
+</p>
+<h2>個別ページ、検索について</h2>
+<p>
+URLの「one_page.html#●●●」の●●●の部分は、ハッシュ・アンカーと呼ばれており、ブラウザの実装によりサーバー側に送信されない仕様です。<br>
+one_pageの各ページ、検索機能、タグ機能などは、すべてJavaScriptにて動作しているため、どのページを見たかサーバー側からは判別することができません。<br>
+これは一般的な「page_name?query」のような「？」を利用したものとの違いになります。<br>
+<br>
+→：<a href="https://developer.mozilla.org/ja/docs/Web/URI/Reference/Fragment">mozilla MDN Fragment</a><br>
+</p>
+<h2>クイックアクセス</h2>
+<div id="bodypart">
+</div>
+<div id="bodypart2">
+</div>
+<hr>
+<div id="history"></div>
+<div id="jsbottom"></div>
+<hr>
+&copy; syuribox
+<br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+<script src="blankdata.js"></script>
+<script src="maindata.js"></script>
+</body>
+</html>
